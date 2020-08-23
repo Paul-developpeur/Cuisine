@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les recettes de maman</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body style='background-color: #0c4e85;'>
+       
+
+        <nav>
+            <div class="nav-wrapper">
+                <p class="brand-logo center">Les recettes de Maman</p>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href='index.html'>accueil</a></li>
+                    <li><a href='#' id='new'>nouveauté</a></li>
+                    <li><a href="#" id='contact'>me contacter</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="PageContent">
+            <h2 class='title'>Repas, Pâtisserie, Jus</h2>
+            <h5>Pour naviguer et découvriez ces délicieuses recettes, cliquez sur l'icone en bas à droite !</h5>
+            
+            <div class="info row center">
+
+                <div class="repas col s4">
+                    <img src="pizza.png"/>
+                    <h2 class="orange-text">Repas</h2>
+                    <p class='white-text'>Savourez les repas du midi et du soir les plus exceptionnels qui soit. <br>(je vais un peux trop loin!)</p>
+                </div>
+                <div class="patis col s4">
+                    <img src="biscuit.png"/>
+                    <h2 class="orange-text">Pâtisserie</h2>
+                    <p class='white-text'>Dévorez, goûtez, sentez !!<br>Les irrésistibles pâtisseries, la saveur que tous les enfants raffolent au point d'en avoir mal au ventre.</p>
+                </div>
+                <div class="jus col s4">
+                    <img src='soda.png'/>
+                    <h2 class="orange-text">Jus</h2>
+                    <p class='white-text'>Je ne sais pas qui vous êtes mais si vous voulez une boisson seine pour vous motiver à maigrir comme ma maman, je vous conseille vivement d'y goutez.</p>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- Meal -->
+        <div class="meal">
+            <div class="title">
+                <p>Repas</p>
+            </div>
+        </div>
+
+        <!-- Pastry -->
+        <div class="pastry">
+            <div class="title">
+                <p>Pâtisserie</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s3">
+                        <a id='charlotte' href='pastry/RoyalCharlotte.php'><p>Charlotte Royal</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Juice -->
+        <div class="juice">
+            <div class="title">
+                <p>Jus</p>
+            </div>
+        </div>
+
+        <!-- Floating button -->
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large blue">
+              <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+              <li><a class="ShowMeal btn-floating red center"><img src="pizza.png"/></i></a></li>
+              <li><a class="ShowPastry btn-floating yellow darken-1 center"><img src="biscuit.png"/></a></li>
+              <li><a class="ShowJuice btn-floating green center"><img src='soda.png'/></a></li>
+            </ul>
+        </div>
+        
+
+        <script src='jquery-3.5.1.min.js'></script>
+        <script src="app.js"></script>
+    </body>
+</html>
